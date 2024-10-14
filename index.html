@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mon OS</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Ajout de Font Awesome -->
+    </head>
+    
+<body>
+    <div class="fenetre" id="blocNote">
+        <span class="fermerFenetre">X</span>
+        <input type="text" id="nomBlocNote" placeholder="Nom du bloc-note">
+        <textarea id="texteBlocNote"></textarea>
+        <button id="sauvegarderBlocNote">Sauvegarder</button>
+        <div class="redimensionner"></div>
+    </div>
+    
+    <div class="fenetre" id="calculatrice">
+        <span class="fermerFenetre">X</span>
+        <input type="number" id="nombre1" placeholder="Premier nombre">
+        <select id="operation">
+            <option value="add">+</option>
+            <option value="sub">-</option>
+            <option value="mul">*</option>
+            <option value="div">/</option>
+        </select>
+        <input type="number" id="nombre2" placeholder="Deuxième nombre">
+        <button id="calculer">Calculer</button>
+        <p id="resultat"></p>
+        <div class="redimensionner"></div>
+    </div>
+
+    <div class="fenetre" id="parametres">
+        <span class="fermerFenetre">X</span>
+        <label for="fondEcran">URL du fond d'écran :</label>
+        <input type="text" id="fondEcran" placeholder="Entrez une URL d'image">
+        <button id="changerFondEcran">Changer le fond d'écran</button>
+        <div class="redimensionner"></div>
+    </div>
+    
+    <div class="fenetre" id="lecteurMusique">
+        <span class="fermerFenetre">X</span>
+        <h2>Lecteur de musique</h2>
+        <input type="file" id="audioFile" accept="audio/*">
+        <audio id="audioPlayer" controls>
+            Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+        <div class="redimensionner"></div>
+    </div>
+
+    <div class="fenetre" id="navigateurFichier">
+        <span class="fermerFenetre">X</span>
+        <h2>Navigateur de fichier</h2>
+        <input type="file" id="fichier">
+        <p id="nomFichier"></p>
+        <pre id="contenuFichier"></pre>
+        <div class="redimensionner"></div>
+    </div>
+
+    <div class="fenetre" id="jeu">
+        <span class="fermerFenetre">X</span>
+        <h2>Jeu - Pierre, Papier, Ciseaux</h2>
+        <button id="pierre">Pierre</button>
+        <button id="papier">Papier</button>
+        <button id="ciseaux">Ciseaux</button>
+        <p id="resultatJeu"></p>
+        <div class="redimensionner"></div>
+    </div>
+
+    <div class="fenetre" id="appStore">
+        <span class="fermerFenetre">X</span>
+        <h1>Boutique d'applications</h1>
+        <div id="applications"></div>
+        <div class="redimensionner"></div>
+    </div>
+
+
+    <div class="barreTaches">
+        <button id="ouvrirBlocNote"><i class="fas fa-sticky-note"></i> Ouvrir bloc-note</button>
+        <button id="ouvrirCalculatrice"><i class="fas fa-calculator"></i> Ouvrir la calculatrice</button>
+        <button id="ouvrirParametres"><i class="fas fa-cog"></i> Ouvrir les paramètres</button>
+        <button id="ouvrirLecteurMusique"><i class="fas fa-music"></i> Ouvrir le lecteur de musique</button>
+        <button onclick="window.open('https://www.startpage.com', '_blank');"><i class="fas fa-search"></i> Ouvrir Startpage</button>
+        <button id="ouvrirNavigateurFichier"><i class="fas fa-folder-open"></i> Ouvrir le navigateur de fichier</button>
+        <button id="ouvrirJeu"><i class="fas fa-gamepad"></i> Ouvrir le jeu</button>
+        <button id="ouvrirAppStore"><i class="fas fa-store"></i> Ouvrir la boutique d'applications</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+body {
+    background-image: url("https://s3.amazonaws.com/thisistoday-webassets/siteMedia/Devotion-Images/2018-06/june-12.jpg");
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.fenetre {
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    padding: 10px;
+    display: none;
+}
+textarea, input[type="text"], input[type="number"] {
+    width: 90%;
+}
+button {
+    margin-top: 10px;
+    background-color: #281f7e; /* Vert */
+    color: white; /* Texte blanc */
+    padding: 10px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #45a049; /* Vert foncé */
+}
+.redimensionner {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+    cursor: nw-resize;
+}
+.fermerFenetre {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.barreTaches {
+    background-color: #202020;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Augmenter la hauteur */
+    color: #ffffff;
+    padding: 5px;
+    display: flex; /* Ajouter flex pour aligner les boutons */
+    align-items: center; /* Centrer les boutons verticalement */
+    justify-content: space-around; /* Distribuer les boutons uniformément */
+}
+
+#lecteurMusique {
+    display: none;
+}
+
+#messages {
+    height: 100px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 5px;
+}
